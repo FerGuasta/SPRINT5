@@ -1,4 +1,3 @@
-
 class Razon():
     def __init__(self, razon):
         self.razon = razon

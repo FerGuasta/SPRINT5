@@ -9,3 +9,5 @@ class Direccion():
         pass
     def Output_As_Label(self):
         pass
+    
+    
