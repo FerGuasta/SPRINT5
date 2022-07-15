@@ -1,6 +1,7 @@
 class Cuenta():
-    def __init__(self, limite_extraccion_diario, limite_transferencia_recibida,
+    def __init__(self, tipo, limite_extraccion_diario, limite_transferencia_recibida,
                 monto, costo_transferencia, saldo_descubierto_disponible):
+        self.tipo = tipo 
         self.limite_extraccion_diario = limite_extraccion_diario
         self.limite_transferencia_recibida = limite_transferencia_recibida
         self.monto = monto 
