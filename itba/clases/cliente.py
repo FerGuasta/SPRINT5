@@ -1,12 +1,13 @@
 from .direccion import Direccion
 
 class Cliente:
-    def __init__(self,data):
+    def __init__(self,data,cuenta):
         self.tipo=data['tipo']
         self.dni=data['dni']
         self.nombre=data['nombre']
         self.apellido=data['apellido']
         self.dir = Direccion(data['direccion']) 
+        self.cuenta = cuenta
         #print('Se creo cliente ' + self.dni)
         
     def baja(self):

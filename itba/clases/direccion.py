@@ -5,7 +5,7 @@ class Direccion():
         self.ciudad= dir['ciudad']
         self.provincia= dir['provincia']
         self.pais= dir['pais']
-    def validate(self):
+    def Validate(self):
         pass
     def Output_As_Label(self):
         pass

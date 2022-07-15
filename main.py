@@ -6,5 +6,8 @@ data = parseador.Parser('.\itba\eventos\eventos_black.json') #and parseador.Pars
 cliente = data.cliente 
 eventos = data.eventos
 #print(cliente)
-buscador = errores.Buscador(eventos)
+buscador = errores.Buscador(eventos,cliente.cuenta)
+#razones  = buscador.razones 
+
+#html = reporte.GetHTML(razones)
 
