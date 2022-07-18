@@ -30,8 +30,8 @@ class Cliente:
 
 """
 class ClienteGold(Cliente):
-    def __init__(self, data):
-        super().__init__(data)
+    def __init__(self, data, cuenta):
+        super().__init__(data, cuenta)
     def puede_crear_chequera(self): 
         return True
     def puede_crear_tarjeta_credito(self):
@@ -56,8 +56,8 @@ class ClienteGold(Cliente):
     (Saldo descubierto):    No. Hasta $0
 """    
 class ClienteClassic(Cliente):
-    def __init__(self, data):
-        super().__init__(data)
+    def __init__(self, data, cuenta):
+        super().__init__(data, cuenta)
     def puede_crear_chequera(Self): 
         return False
     def puede_crear_tarjeta_credito(self):
@@ -82,8 +82,8 @@ class ClienteClassic(Cliente):
     (Saldo descubierto):    Si. Hasta $-10K
 """  
 class ClienteBlack(Cliente):
-    def __init__(self, data):
-        super().__init__(data)
+    def __init__(self, data, cuenta):
+        super().__init__(data, cuenta)
     def puede_crear_chequera(Self): 
         return True
     def puede_crear_tarjeta_credito(self):
