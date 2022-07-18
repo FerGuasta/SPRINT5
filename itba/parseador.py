@@ -11,17 +11,17 @@ class Parser():
 
         if self.data['tipo'] == 'BLACK':
             self.cuenta = cuenta.Cuenta('BLACK',100000,10000000000000,0,0,-10000)
-            self.cliente= cliente.ClienteBlack(self.data, cuenta)
+            self.cliente= cliente.ClienteBlack(self.data, self.cuenta)
             #print('Se creo BLACK')
             #print(self.cuenta)
         elif self.data['tipo'] == 'GOLD':
-            self.cuenta = cuenta.Cuenta('GOLD',20000,500000,0,0.5,-10000)
-            self.cliente= cliente.ClienteGold(self.data, cuenta)
+            self.cuenta = cuenta.Cuenta('GOLD',20000,500000,0,0.005,-10000)
+            self.cliente= cliente.ClienteGold(self.data, self.cuenta)
             #print('Se creo GOLD')
             #print(self.cuenta)
         else:
             self.cuenta = cuenta.Cuenta('CLASSIC',10000,150000,0,0.01,0)
-            self.cliente=cliente.ClienteClassic(self.data, cuenta)
+            self.cliente=cliente.ClienteClassic(self.data, self.cuenta)
             #print('Se creo CLASSIC')
             #print(self.cuenta)
         
