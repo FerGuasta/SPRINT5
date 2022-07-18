@@ -5,7 +5,7 @@ class GetHTML():
         self.cliente = cliente 
         self.razones = razones
 
-    def get_html(self):
+    def get_html(self):       
         f = open(str(self.cliente.dni) + '.html', 'w', encoding='utf-8')
 
         CONTENIDO= f"""
